@@ -32,7 +32,7 @@
 - email: sakib@gmail.com
 - password: 757575
 - You can also sign up as a new user.
-
+password length min 6
 ## 🛠️ Tech Stack
 
 ### Backend
