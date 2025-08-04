@@ -66,5 +66,5 @@ CVC: Any 3 digits
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/tickify.git
-cd tickify
+git clone https://github.com/mdmrmmunna3/tickify-project
+
