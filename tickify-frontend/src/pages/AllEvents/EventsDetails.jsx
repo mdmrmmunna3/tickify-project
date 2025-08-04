@@ -88,8 +88,14 @@ const EventsDetails = () => {
 
                 <p className='w-[300px] btn mt-3'>
 
-                    <button onClick={handleBuyTicket} className="shadow-md px-5 py-2 rounded-md flex justify-center items-center gap-2">
-                        <FaTicket /> Buy Ticket Now!
+                    <button
+                        onClick={handleBuyTicket}
+                        disabled={new Date() > new Date(event.end_time)}
+                        className={`shadow-md px-5 py-2 rounded-md flex justify-center items-center gap-2 
+        ${new Date() > new Date(event.end_time) ? 'bg-black cursor-not-allowed' : ' text-white'}`}
+                    >
+                        <FaTicket />
+                        {new Date() > new Date(event.end_time) ? 'Event Ended' : 'Buy Ticket Now!'}
                     </button>
                 </p>
             </div>
